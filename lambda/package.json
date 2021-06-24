@@ -1,7 +1,7 @@
 {
-  "name": "hello-world",
+  "name": "assistent-coronatest",
   "version": "1.2.0",
-  "description": "alexa utility for quickly building skills",
+  "description": "alexa skill to check the rest validity of a corona test",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
