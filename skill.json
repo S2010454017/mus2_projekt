@@ -1,0 +1,67 @@
+{
+  "manifest": {
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "uri": "arn:aws:lambda:eu-west-1:281245456611:function:1e90fdb9-8b82-47ef-9037-e21b6b608d59:Release_0"
+        },
+        "interfaces": [],
+        "regions": {
+          "EU": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:eu-west-1:281245456611:function:1e90fdb9-8b82-47ef-9037-e21b6b608d59:Release_0"
+            }
+          },
+          "NA": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-east-1:281245456611:function:1e90fdb9-8b82-47ef-9037-e21b6b608d59:Release_0"
+            }
+          },
+          "FE": {
+            "endpoint": {
+              "uri": "arn:aws:lambda:us-west-2:281245456611:function:1e90fdb9-8b82-47ef-9037-e21b6b608d59:Release_0"
+            }
+          }
+        }
+      }
+    },
+    "manifestVersion": "1.0",
+    "permissions": [
+      {
+        "name": "alexa:devices:all:address:country_and_postal_code:read"
+      }
+    ],
+    "privacyAndCompliance": {
+      "allowsPurchases": false,
+      "containsAds": false,
+      "isChildDirected": false,
+      "locales": {
+        "de-DE": {}
+      },
+      "usesPersonalInfo": false
+    },
+    "publishingInformation": {
+      "automaticDistribution": {
+        "isActive": false
+      },
+      "category": "ORGANIZERS_AND_ASSISTANTS",
+      "distributionCountries": [],
+      "distributionMode": "PUBLIC",
+      "isAvailableWorldwide": true,
+      "locales": {
+        "de-DE": {
+          "description": "Dieser Skill bietet die Möglichkeit die Restdauer eines Corona Tests abzufragen. Ist der Test dabei nicht mehr Gültig, kann auf Wunsch hin die nächste Teststraße gefunden werden.",
+          "examplePhrases": [
+            "Alexa öffne assistent coronatest",
+            "Wie lange ist mein Test noch gültig?",
+            "Wo ist die nächste Teststraße?"
+          ],
+          "keywords": [],
+          "name": "Corona-Test",
+          "summary": "Skill für die Abfrage der Restgültigkeit eines Corona Tests"
+        }
+      },
+      "testingInstructions": "Sample Testing Instructions."
+    }
+  }
+}

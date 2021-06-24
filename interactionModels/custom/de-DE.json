@@ -1,0 +1,61 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "assistent coronatest",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": [
+            "hilfe"
+          ]
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.FallbackIntent",
+          "samples": []
+        },
+        {
+          "name": "ValideIndent",
+          "slots": [],
+          "samples": [
+            "Testgültigkeit",
+            "Restdauer",
+            "Test noch gültig",
+            "Ist mein Test noch gültig",
+            "Restgültigkeit"
+          ]
+        },
+        {
+          "name": "NextStation",
+          "slots": [],
+          "samples": [
+            "bitte",
+            "ja",
+            "Teststraße",
+            "Teststation",
+            "Wo ist die nächste Teststation",
+            "nächstgelegene Teststation",
+            "näheste Teststation",
+            "näheste Teststraße",
+            "nächstgelegene Teststraße",
+            "nächste Teststraße",
+            "Wo ist die nächste Teststraße"
+          ]
+        }
+      ],
+      "types": []
+    }
+  },
+  "version": "10"
+}
