@@ -8,7 +8,7 @@ const maxValidTime = 60*60*24*2 - 1; // time in seconds -> 47:59:59 max
 const minValidTime = 60;             // time in seconds -> 0:01:00 min
 
 // contains the information for the next test station for a given postal code
-const myMap = new Map([
+const nextStations = new Map([
   ["4501", 'im Forum Neuhofen an der Krems'],
   ["4060", 'in der Sporthalle Leonding'],
   ["4050", 'im Volkshaus Traun'],
@@ -79,7 +79,7 @@ const LaunchRequestHandler = {
   },
 };
 
-// handle request concerning the validite of the last test
+// handle request dealing with the validity  of the "saved" corona test
 const CoronaTestHandler = {
   canHandle(handlerInput) {
     return handlerInput.requestEnvelope.request.type === 'IntentRequest'
@@ -142,8 +142,8 @@ const NextStationHandler = {
         console.log(JSON.parse(response));
         const res = JSON.parse(response);
         
-        if(myMap.get(res.postalCode) !== undefined){
-            speakOutput = requestAttributes.t('NEXT_STATION_MSG',myMap.get(res.postalCode));
+        if(nextStations.get(res.postalCode) !== undefined){
+            speakOutput = requestAttributes.t('NEXT_STATION_MSG',nextStations.get(res.postalCode));
         }
         else{
             speakOutput = requestAttributes.t('NEXT_STATION_NOT_FOUND');
